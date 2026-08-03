@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".User_notificationpage"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="136dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textviewempty"
+                android:layout_width="338dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text=""
+                android:textSize="20dp" />
+
+
+            <TextView
+                android:id="@+id/textviewblank"
+                android:layout_width="345dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:text=" "
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnnn1"
+                android:layout_width="173dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="30dp"
+                android:text="Confirm" />
+
+            <Button
+                android:id="@+id/btnnnn2"
+                android:layout_width="170dp"
+                android:layout_height="match_parent"
+                android:text="Deny" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/completeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <TextView
+            android:id="@+id/texrating"
+            android:layout_width="248dp"
+            android:layout_height="110dp"
+            android:layout_marginLeft="10dp"
+            android:justificationMode="none"
+            android:text="Your service is complete."
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/btnrating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:text="Review"
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:orientation="vertical">
+
+        <!-- Your BottomNavigationView -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomnavigation1"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginTop="20dp"
+            app:menu="@menu/bottomnavv" />
+
+    </LinearLayout>
+
+</LinearLayout>

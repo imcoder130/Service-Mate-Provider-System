@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlumberPage"
+    >
+
+
+    <ListView
+        android:id="@+id/listvieww"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:divider="@color/black"
+        android:dividerHeight="2dp"
+        ></ListView>
+
+
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_marginLeft="300dp"
+        android:layout_below="@id/listvieww"
+        ></Button>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <!-- Your BottomNavigationView -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomnavigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nextButton"
+            android:layout_marginTop="700dp"
+            app:menu="@menu/bottomnavv" />
+
+    </LinearLayout>
+</RelativeLayout>
+

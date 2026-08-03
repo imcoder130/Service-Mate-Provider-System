@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#f2f2f2"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/serviceProviderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="8dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Only for Pune"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imageUser"
+            android:layout_width="343dp"
+            android:layout_height="233dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/homeowner2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="USER"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+
+        <ImageButton
+            android:id="@+id/imageProvider"
+            android:layout_width="300dp"
+            android:layout_height="235dp"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/handyman2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_marginTop="10dp"
+            android:text="HandyMan"
+            android:textAlignment="center"
+            android:textSize="30sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

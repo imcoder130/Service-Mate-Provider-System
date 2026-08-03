@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ServiceMateProviderApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".Users_Rating"
+            android:exported="false" />
+        <activity
+            android:name=".TimeEditPage"
+            android:exported="false" />
+        <activity
+            android:name=".provider_reminderpage"
+            android:exported="false" />
+        <activity
+            android:name=".ProviderNotification"
+            android:exported="false" />
+        <activity
+            android:name=".ProviderAccount"
+            android:exported="false" />
+        <activity
+            android:name=".ProviderHome"
+            android:exported="false" />
+        <activity
+            android:name=".RequestForm"
+            android:exported="false" />
+        <activity
+            android:name=".Providerentry"
+            android:exported="false" />
+        <activity
+            android:name=".ProviderList"
+            android:exported="false" />
+        <activity
+            android:name=".OnOffPage"
+            android:exported="false" />
+        <activity
+            android:name=".Aboutus_page"
+            android:exported="false" />
+        <activity
+            android:name=".User_notificationpage"
+            android:exported="false" />
+        <activity
+            android:name=".UserAccount"
+            android:exported="false" />
+        <activity
+            android:name=".PvcFloorPage"
+            android:exported="false" />
+        <activity
+            android:name=".GardnerPage"
+            android:exported="false" />
+        <activity
+            android:name=".AcServicesPage"
+            android:exported="false" />
+        <activity
+            android:name=".PainterPage"
+            android:exported="false" />
+        <activity
+            android:name=".PestControlPage"
+            android:exported="false" />
+        <activity
+            android:name=".CarpenterPage"
+            android:exported="false" />
+        <activity
+            android:name=".PlumberPage"
+            android:exported="false" />
+        <activity
+            android:name=".ElectricianPage"
+            android:exported="false" />
+        <activity
+            android:name=".User_home"
+            android:exported="false" />
+        <activity
+            android:name=".Provider_Login"
+            android:exported="false" />
+        <activity
+            android:name=".Provider_registration"
+            android:exported="false" />
+        <activity
+            android:name=".User_Login"
+            android:exported="false" />
+        <activity
+            android:name=".User_registration"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <service android:name=".MusicService"/>
+    </application>
+
+</manifest>

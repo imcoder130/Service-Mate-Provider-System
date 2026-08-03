@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Aboutus_page"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="About Us"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="209dp"
+            android:layout_height="234dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="180dp"
+            android:src="@drawable/img1" />
+
+        <ImageView
+            android:layout_width="209dp"
+            android:layout_height="196dp"
+            android:layout_marginLeft="-180dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginRight="-80dp"
+            android:src="@drawable/img2" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="238dp"
+        android:layout_height="129dp"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="-40dp"
+        android:src="@drawable/img3" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_margin="10dp"
+        android:justificationMode="inter_word"
+        android:text="     launch your own mobile based on-line on demand home services with Service mate provider app. The customizable interface of this amazing app can quickly late developers to setup a service booking system to accept booking from client from any where in only a few minutes with ready to use registration page, login page, services and their sub services page and more.  "
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:text="Our Mission "
+        android:layout_gravity="center"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_margin="10dp"
+        android:justificationMode="inter_word"
+        android:text="   With more than 120 services are available in future from plumbers to lawyer, through psychologist ,electricians and personal trainers. Our platform help millions of customers find the right local service professionals.   "  />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Your BottomNavigationView -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomnavigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="55dp"
+            app:menu="@menu/bottomnavv" />
+
+    </LinearLayout>
+
+</LinearLayout>

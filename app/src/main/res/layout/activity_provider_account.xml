@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".UserAccount"
+    android:orientation="vertical">
+
+    <!-- User Information Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="153dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/imageoflogin" />
+
+        <LinearLayout
+            android:layout_width="283dp"
+            android:layout_height="126dp"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/providername"
+                android:layout_width="259dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="User Name"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/provideraddress"
+                android:layout_width="259dp"
+                android:layout_height="41dp"
+                android:text="Address"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/providerphone"
+                android:layout_width="256dp"
+                android:layout_height="38dp"
+                android:text="phone No"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/logoutbtn"
+        android:layout_width="145dp"
+        android:layout_height="59dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:drawableRight="@drawable/baseline_logout_24"
+        android:text="Log Out" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Your BottomNavigationView -->
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomnavigation"
+            android:layout_width="411dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="380dp"
+            android:layout_marginRight="60dp"
+            app:menu="@menu/bottomnav" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

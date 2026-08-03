@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".UserAccount"
+    android:orientation="vertical">
+
+    <!-- User Information Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <ImageView
+            android:layout_width="95dp"
+            android:layout_height="153dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/imageoflogin" />
+
+        <LinearLayout
+            android:layout_width="283dp"
+            android:layout_height="126dp"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="34dp"
+                android:layout_marginTop="10dp"
+                android:text="User Name"
+                android:textSize="28sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/usercity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="city"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/useraddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/userphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="phone No"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/logoutbtn"
+        android:layout_width="145dp"
+        android:layout_height="59dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:drawableRight="@drawable/baseline_logout_24"
+        android:text="Log Out" />
+
+    <LinearLayout
+        android:layout_width="274dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_history_22"/>
+
+        <Button
+            android:id="@+id/btnmyorders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Orders to:-"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="270dp"
+        android:layout_height="173dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_margin="12dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="15dp">
+
+        <TextView
+            android:id="@+id/providerNameTextView"
+            android:layout_width="245dp"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/providerOrderTextView"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text=""
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/providerRatingTextView"
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:text=""
+            android:layout_marginLeft="10dp"
+            android:textSize="20dp" />
+
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- Your BottomNavigationView -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnavigation"
+        android:layout_width="487dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400dp"
+        android:layout_marginRight="500dp"
+        app:menu="@menu/bottomnavv" />
+
+
+
+</LinearLayout>

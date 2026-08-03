@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "9476148459",
+    "project_id": "my-app-9c1c4",
+    "storage_bucket": "my-app-9c1c4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:9476148459:android:4825e9357fd161b5b982ae",
+        "android_client_info": {
+          "package_name": "com.example.servicemateproviderapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBRdNcnC5BfHjOGm5TRRaM2ude9IK2UKD0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
